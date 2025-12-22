@@ -1,35 +1,21 @@
-#tr{
-    border-radius:2px;
-    border-width:"1";
-    background-color:lightyellow;
-    text-align:center;
-}
+/* ONLY third table */
 
-/* tr{
-
-    border-radius:2px;
-    border-width:"2px";
-    align-items: center;
-
-} */
-
-#lasttable th{
-    border-radius:2px;
-    border-width:"1";
-    background-color:lightyellow;
-    text-align:center;
-    padding:"15px";
-}
-#lasttable td{
-    border-radius:2px;
-    border-width:"1";
-    background-color:rgb(168, 224, 224);
-    text-align:center;
-    padding:"15px";
-}
-#lasttable{
-    border-radius:"2px";
+#externalTable {
+    border: 4px dashed rgb(16, 61, 16);
+    width: 500px;
     border-collapse: collapse;
-    border-color: rgb(235, 105, 54);
-   
+    border-radius: 2px ;
+}
+
+#externalTable th {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#externalTable td {
+    background-color: #e7ffe7;
+    text-align: center;
+    padding: 8px;
 }

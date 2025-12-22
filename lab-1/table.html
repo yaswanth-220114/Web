@@ -1,110 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Table Example</title>
-    <link rel="stylesheet" href="tablestyle.css">
-</head>
-<body>
-    <table border="2" width="500" >
+    <title>Inline, Internal, External CSS Tables</title>
 
-        <tr style="background-color: tomato;text-align:center;text-transform: capitalize;width: 500px;">
-            <th >monday</th>
-            <th>tuesay</th>
-            <th>wednesday</th>
-            <th>thursday</th>
-            <th>friday</th>
-            <th>saturday</th>
-        </tr>
-        <tr style="background-color: rgb(158, 212, 219);text-align:center;padding-left: 10px;">
-            <td>web technologies</td>
-            <td>dsp</td>
-            <td><b>coa</b></td>
-            <td>ior</td>
-            <td>cd</td>
-            <td>no class</td>
-        </tr>
-        <tr style="background-color: rgb(158, 212, 219);text-align:center;letter-spacing: 1px">
-            <td>web technologies</td>
-            <td><b>no class</b></td>
-            <td>ior</td>
-            <td>coa</td>
-            <td>cd</td>
-            <td>dsp</td>
-        </tr>
-    </table>
-    <br>
-    <p>using internal css</p>
+    <link rel="stylesheet" href="tablestyle.css">
 
     <style>
-        table{
-            border: 2px solid black;
+        #internalTable {
+            border: 3px solid black;
             width: 500px;
+            border-collapse: collapse;
         }
-        th{
-            background-color: rgb(214, 197, 164);
+
+        #internalTable th {
+            background-color: lightblue;
+            color: darkblue;
             text-align: center;
-            text-transform: capitalize;
+            text-transform: uppercase;
+            padding: 8px;
         }
-        td{
-            background-color: rgb(214, 197, 164);
+
+        #internalTable td {
+            background-color: aliceblue;
             text-align: center;
+            padding: 6px;
         }
     </style>
+</head>
 
-    <table border="2" width="500" >
-        <tr>
-            <th >monday</th>
-            <th>tuesay</th>
-            <th>wednesday</th>
-            <th>thursday</th>
-            <th>friday</th>
-            <th>saturday</th>
-        </tr>
-        <tr>
-            <td>web technologies</td>
-            <td>dsp</td>
-            <td>coa</td>
-            <td>ior</td>
-            <td>cd</td>
-            <td>no class</td>
-        </tr>
-        <tr>
-            <td>web technologies</td>
-            <td>no class</td>
-            <td>ior</td>
-            <td>coa</td>
-            <td>cd</td>
-            <td>dsp</td>
-        </tr>
-    </table>
+<body>
 
-    <p>external css table</p>
+<!-- ================= INLINE CSS TABLE ================= -->
+<h3>Inline CSS Table</h3>
 
-    <table border="2" width="500" id="lasttable">
-        <tr >
-            <th >monday</th>
-            <th>tuesay</th>
-            <th>wednesday</th>
-            <th>thursday</th>
-            <th>friday</th>
-            <th>saturday</th>
-        </tr>
-        <tr >
-            <td>web technologies</td>
-            <td>dsp</td>
-            <td>coa</td>
-            <td>ior</td>
-            <td>cd</td>
-            <td>no class</td>
-        </tr>
-        <tr >
-            <td>web technologies</td>
-            <td>no class</td>
-            <td>ior</td>
-            <td>coa</td>
-            <td>cd</td>
-            <td>dsp</td>
-        </tr>
-    </table>
+<table border="2" width="500">
+    <tr style="background-color: tomato; color:white; text-align:center;">
+        <th>monday</th>
+        <th>tuesday</th>
+        <th>wednesday</th>
+        <th>thursday</th>
+        <th>friday</th>
+        <th>saturday</th>
+    </tr>
+
+    <tr style="background-color: lightyellow; text-align:center;">
+        <td>WT</td>
+        <td>DSP</td>
+        <td>COA</td>
+        <td>IOR</td>
+        <td>CD</td>
+        <td>No class</td>
+    </tr>
+
+    <tr style="background-color: lightyellow; text-align:center; font-weight:bold;">
+        <td>WT</td>
+        <td>No class</td>
+        <td>IOR</td>
+        <td>COA</td>
+        <td>CD</td>
+        <td>DSP</td>
+    </tr>
+</table>
+
+<br><hr><br>
+
+<!-- ================= INTERNAL CSS TABLE ================= -->
+<h3>Internal CSS Table</h3>
+
+<table id="internalTable">
+    <tr>
+        <th>monday</th>
+        <th>tuesday</th>
+        <th>wednesday</th>
+        <th>thursday</th>
+        <th>friday</th>
+        <th>saturday</th>
+    </tr>
+
+    <tr>
+        <td>WT</td>
+        <td>DSP</td>
+        <td>COA</td>
+        <td>IOR</td>
+        <td>CD</td>
+        <td>No class</td>
+    </tr>
+
+    <tr>
+        <td>WT</td>
+        <td>No class</td>
+        <td>IOR</td>
+        <td>COA</td>
+        <td>CD</td>
+        <td>DSP</td>
+    </tr>
+</table>
+
+<br><hr><br>
+
+<!-- ================= EXTERNAL CSS TABLE ================= -->
+<h3>External CSS Table</h3>
+
+<table id="externalTable">
+    <tr>
+        <th>monday</th>
+        <th>tuesday</th>
+        <th>wednesday</th>
+        <th>thursday</th>
+        <th>friday</th>
+        <th>saturday</th>
+    </tr>
+
+    <tr>
+        <td>WT</td>
+        <td>DSP</td>
+        <td>COA</td>
+        <td>IOR</td>
+        <td>CD</td>
+        <td>No class</td>
+    </tr>
+
+    <tr>
+        <td>WT</td>
+        <td>No class</td>
+        <td>IOR</td>
+        <td>COA</td>
+        <td>CD</td>
+        <td>DSP</td>
+    </tr>
+</table>
+
 </body>
 </html>
