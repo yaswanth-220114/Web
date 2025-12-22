@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Example</title>
+    <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+    <table border="2" width="500" >
+
+        <tr style="background-color: tomato;text-align:center;text-transform: capitalize;width: 500px;">
+            <th >monday</th>
+            <th>tuesay</th>
+            <th>wednesday</th>
+            <th>thursday</th>
+            <th>friday</th>
+            <th>saturday</th>
+        </tr>
+        <tr style="background-color: rgb(158, 212, 219);text-align:center;padding-left: 10px;">
+            <td>web technologies</td>
+            <td>dsp</td>
+            <td><b>coa</b></td>
+            <td>ior</td>
+            <td>cd</td>
+            <td>no class</td>
+        </tr>
+        <tr style="background-color: rgb(158, 212, 219);text-align:center;letter-spacing: 1px">
+            <td>web technologies</td>
+            <td><b>no class</b></td>
+            <td>ior</td>
+            <td>coa</td>
+            <td>cd</td>
+            <td>dsp</td>
+        </tr>
+    </table>
+    <br>
+    <p>using internal css</p>
+
+    <style>
+        table{
+            border: 2px solid black;
+            width: 500px;
+        }
+        th{
+            background-color: rgb(214, 197, 164);
+            text-align: center;
+            text-transform: capitalize;
+        }
+        td{
+            background-color: rgb(214, 197, 164);
+            text-align: center;
+        }
+    </style>
+
+    <table border="2" width="500" >
+        <tr>
+            <th >monday</th>
+            <th>tuesay</th>
+            <th>wednesday</th>
+            <th>thursday</th>
+            <th>friday</th>
+            <th>saturday</th>
+        </tr>
+        <tr>
+            <td>web technologies</td>
+            <td>dsp</td>
+            <td>coa</td>
+            <td>ior</td>
+            <td>cd</td>
+            <td>no class</td>
+        </tr>
+        <tr>
+            <td>web technologies</td>
+            <td>no class</td>
+            <td>ior</td>
+            <td>coa</td>
+            <td>cd</td>
+            <td>dsp</td>
+        </tr>
+    </table>
+
+    <p>external css table</p>
+
+    <table border="2" width="500" id="lasttable">
+        <tr >
+            <th >monday</th>
+            <th>tuesay</th>
+            <th>wednesday</th>
+            <th>thursday</th>
+            <th>friday</th>
+            <th>saturday</th>
+        </tr>
+        <tr >
+            <td>web technologies</td>
+            <td>dsp</td>
+            <td>coa</td>
+            <td>ior</td>
+            <td>cd</td>
+            <td>no class</td>
+        </tr>
+        <tr >
+            <td>web technologies</td>
+            <td>no class</td>
+            <td>ior</td>
+            <td>coa</td>
+            <td>cd</td>
+            <td>dsp</td>
+        </tr>
+    </table>
+</body>
+</html>
