@@ -6,9 +6,10 @@
     <title>StyleHub | Clothing Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <div class="container header-container">
             <span id="menuToggle" class="menu-toggle">☰</span>
@@ -18,7 +19,9 @@
             <div class="header-right">
                 <a href="seller.html">Become seller</a>
                 <a href="form.html">Contact Us</a>
-                🛒 Cart <span class="cart-count">3</span>
+                <input type="button" value="add-item" onclick="addcart()">
+                🛒 Cart <p id="cart">1</p>
+                
             </div>
         </div>
     </header>
@@ -95,7 +98,36 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+
+        function addcart(){
+            let cart = document.getElementById("cart");
+            cart.innerText = Number(cart.innerText) + 1;
+            console.log("cart-value : "+cart.innerText)
+        }
+
+        
+        
+        const discount = "10%";
+        
+        discountapplied = ()=>{
+            console.log("discount applied " + discount);
+        }
+
+        discountapplied();
+        let count = 0;
+        (function(){
+            count++;
+            console.log("no of times page refreshed"+count);
+        })();
+
+        let id = "n220114";
+        let yash = Symbol("n220114");
+
+        console.log("id "+typeof(id)+" yash "+typeof(yash));
+
+    </script>
     
 </body>
 </html>
